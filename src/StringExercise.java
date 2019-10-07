@@ -53,13 +53,14 @@ public class StringExercise {
 
     //9.2.7
     public static boolean isHeteroPair(String wordA, String wordB){
-        for(int i=0; i<wordA.length(); i++){
-            for(int j=0; j<wordB.length(); j++){
+        boolean hetero = true;
+        for(int i=0; i<wordA.length() && hetero; i++){
+            for(int j=0; j<wordB.length() && hetero; j++){
                 if(wordA.charAt(i) == wordB.charAt(j)){
-                    return false;
+                    hetero = false;
                 }
             }
         }
-        return true;
+        return hetero;
     }
 }

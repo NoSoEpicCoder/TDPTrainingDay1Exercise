@@ -20,7 +20,7 @@ class StringExerciseTest {
     void testIsHeteroPair() {
         assertTrue(StringExercise.isHeteroPair("TERRY", "FOX"));
         assertTrue(StringExercise.isHeteroPair("ROB", "KYLE"));
-        assertFalse(StringExercise.isHeteroPair("JACK", "BALL"));
+        assertFalse(StringExercise.isHeteroPair("JACKSON", "BALL"));
         assertFalse(StringExercise.isHeteroPair("WAYNE", "GRETZKY"));
     }
 }
